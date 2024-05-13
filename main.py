@@ -13,8 +13,8 @@ eps = 0.05
 xi = np.arange(a, b, h)
 xi_h = [i + h/2 for i in xi]
 xi = np.append(xi, 2)
-yi = [fx.subs(x, i).evalf() for i in xi]  # Оцениваем численное значение fx для каждого xi
-yi_h = [fx.subs(x, i + h/2).evalf() for i in xi]  # Оцениваем численное значение fx для каждого xi + h/2
+yi = [fx.subs(x, i).evalf() for i in xi]
+yi_h = [fx.subs(x, i + h/2).evalf() for i in xi]
 
 def l_rec():
     sum1 = 0
